@@ -4,7 +4,14 @@ class Users extends BaseController
 {
 	public function index()
 	{
-		echo '<h1>Users</h1>';
+
+		$data=[];
+
+		helper(['form']);
+
+		echo view('templates/header',$data);
+		echo view('login',$data);
+		echo view('templates/footer',$data);
 	}
 
 }
