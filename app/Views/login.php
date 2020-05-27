@@ -7,7 +7,8 @@
                 <form class="" action="/" method="post">
                     <div class="form-group">
                         <label for="email">Email address</label>
-                        <input class="form-control" type="text" name="email" id="email" value="<?= set_value('email') ?>">
+                        <input class="form-control" type="text" name="email" id="email"
+                            value="<?= set_value('email') ?>">
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>

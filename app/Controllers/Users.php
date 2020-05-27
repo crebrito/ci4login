@@ -10,8 +10,8 @@ class Users extends BaseController
 		helper(['form']);
 
 		echo view('templates/header',$data);
-		echo view('login',$data);
-		echo view('templates/footer',$data);
+		echo view('login');
+		echo view('templates/footer');
 	}
 
 }
