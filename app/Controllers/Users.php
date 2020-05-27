@@ -14,4 +14,15 @@ class Users extends BaseController
 		echo view('templates/footer');
 	}
 
+	public function register()
+	{
+
+		$data=[];
+
+		helper(['form']);
+
+		echo view('templates/header',$data);
+		echo view('register');
+		echo view('templates/footer');
+	}
 }
