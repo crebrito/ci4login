@@ -40,6 +40,13 @@
                                     id="password_confirm" value="">
                             </div>
                         </div>
+                        <?php if(isset($validation)): ?>
+                        <div class="col-12">
+                            <div class="alert alert-danger" role="alert">
+                                <?= $validation->listErrors(); ?>
+                            </div>
+                        </div>
+                        <?php endif; ?>
                     </div>
                     <div class="row">
                         <div class="col-12 col-sm-4">
