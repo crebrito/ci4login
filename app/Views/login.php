@@ -19,6 +19,13 @@
                         <label for="password">Password:</label>
                         <input class="form-control" type="password" name="password" id="password" value="">
                     </div>
+                    <?php if(isset($validation)): ?>
+                    <div class="col-12">
+                        <div class="alert alert-danger" role="alert">
+                            <?= $validation->listErrors(); ?>
+                        </div>
+                    </div>
+                    <?php endif; ?>
                     <div class="row">
                         <div class="col-12 col-sm-4">
                             <button type="submit" class="btn btn-primary">Login</button>
