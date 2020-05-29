@@ -1,7 +1,5 @@
 .DS_Store
 composer.lock
-.env
-.htaccess
 writable/logs/*
 !writable/logs/index.html
 writable/cache/*
